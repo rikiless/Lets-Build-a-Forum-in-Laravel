@@ -134,6 +134,8 @@ class ThreadsController extends Controller
 
         $thread->delete();
 
+        // Another change.
+
         if (request()->wantsJson()) {
             return response([], 204);
         }
